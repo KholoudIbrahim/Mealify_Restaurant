@@ -10,7 +10,6 @@
     <!-- Linking Googke Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!--**************to be modified*****************************-->
     <link
       href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"
       rel="stylesheet"
@@ -33,37 +32,46 @@
   
 <!-----==================== Navbar Section ====================----->
 
-<div id="nav">
+<nav>
   <div class="container">
-    <h1 class="logo"><a href="index.html"> Mealify </a></h1>
-    
-    <ul class="menu">
-      <li><a href="#home" class="home-link"> Home </a></li>
-
-      <li><a href="#chefs" class="chefs-link"> Chefs </a></li>
-
-      <li><a href="#gallery" class="gallery-link"> Gallery </a></li>
-
-      <li><a href="#contact" class="contact-link"> Contact </a></li>
+    <h1>
+      <a href="index.html" class="logo">Mealify</a>
+    </h1>
+    <ul class="nav-links" id="navLinks">
+      <a href="#home" class="close-icon">
+        <i class="fa-solid fa-xmark"></i>
+      </a>
+      <li>
+        <a href="#home">Home</a>
+      </li>
+      <li>
+        <a href="#chefs">Chefs</a>
+      </li>
+      <li>
+        <a href="#gallery">Gallery</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
     </ul>
 
-    <div class="mode">
-      <label for="mode">
-        <i class="fa-regular fa-sun light"></i>
+    <div class="mode-group">
+      <label for="mode" class="dark">
+        <i class="fa-solid fa-moon"></i>
       </label>
-
-    <label for="mode">
-      <i Class="fa-solid fa-moon dark"></i>
-    </label>
-      <input type="checkbox" id="mode" hidden aria-hidden />
-
+      <label for="mode" class="light" hidden aria-hidden>
+        <i class="fa-regular fa-sun"></i
+      ></label>
+      <input type="checkbox" id="mode" class="mode" hidden aria-hidden />
     </div>
+
+    <a href="#navLinks" class="menu-icon"
+      ><i class="fa-solid fa-bars"></i
+    ></a>
   </div>
-
-</div>
-
+</nav>
 <!-----==================== Home Section ====================----->
-  <div class="home section-bg" id="home">
+  <header class="home section-bg" id="home">
     <div class="container">
       <div class="header-content">
         <h2>Enjoy Your Healthy <br /> Delicious Food</h2>
@@ -73,7 +81,7 @@
           eveniet. Eum quas beatae cumque eum quaerat.
         </p>
 
-        <div class="buttons-group">
+        <div class="btn-group">
           <a href="#contact" class="btn btn-main">Book a Table</a>
           <a href="https://youtube.com" target="_blank" class="video-btn">
           <div class="icon">
@@ -96,7 +104,7 @@
       </picture>
 
     </div>
-  </div>
+  </header>
 
 <!-----==================== Chefs  Section ====================----->
 
@@ -121,8 +129,29 @@
           <h3>Walter White</h3>
           <span>Master Chef</span>
           <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
-
         </div>
+        <ul class="social-box">
+          <li>
+            <a href="https://twitter.com" target="_blank">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com" target="_blank">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
       </div>
       <!--second-->
       <div class="card">
@@ -135,6 +164,28 @@
           <span>Patissier</span>
           <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
         </div>
+        <ul class="social-box">
+          <li>
+            <a href="https://twitter.com" target="_blank">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com" target="_blank">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
       </div>
 
       <!--third-->
@@ -148,18 +199,43 @@
           <span>Cook</span>
           <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
         </div>
+        <ul class="social-box">
+          <li>
+            <a href="https://twitter.com" target="_blank">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com" target="_blank">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <!-----==================== Gallery Section ====================----->
-<div id="gallery">
+<div id="gallery" class="gallery section-bg">
 
   <div class="container">
 
+    <div class="main-title">
       <h2>GALLERY</h2>
       <p>Check <span>Our Gallery</span></p>
+    </div>
+    
 
       <div class="photo-gallery">
 
@@ -350,7 +426,7 @@
       </div>
       <div class="quick-links">
         <h3>Quick Links</h3>
-        <ul>
+        <ul class="linksFooter">
           <li>
             <a href="#home">Menu</a>
           </li>

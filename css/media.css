@@ -40,6 +40,72 @@
         padding-inline:15px;
     } 
 }
+/*==================== Navbar ============================*/
+@media screen and (max-width: 1200px) {
+    nav .nav-links {
+      --inline-gap: 0px;
+      --block-gap: 15px;
+      transform: translateX(100%);
+      position: absolute;
+      z-index: 999;
+      width: 350px;
+      height: 100%;
+      background-color: #fff;
+      border-left: 2px solid #f1f1f1;
+      right: 0;
+      top: 0;
+      flex-direction: column;
+      transition: transform 400ms;
+    }
+  
+    nav .nav-links .close-icon {
+      display: block;
+      padding: 10px 15px 5px;
+    }
+  
+    nav .nav-links a:not(.active):hover::before {
+      width: 0px;
+    }
+  
+    nav .nav-links a {
+      width: 100%;
+      padding: var(--block-gap) 10px;
+    }
+  
+    nav .nav-links a::before {
+      bottom: 2px;
+    }
+  
+    nav .menu-icon {
+      display: block;
+    }
+  
+    nav .mode-group {
+      margin-left: auto;
+      margin-right: 20px;
+    }
+  }
+  
+  /*== Navbar Section ==*/
+
+/* @media screen and (max-width: 1200px) {
+    .nav .menu {
+        --inline-gap: 0px;
+        --block-gap: 15px;
+        transform: translateX(100%);
+        position: absolute;
+        z-index: 999;
+        width: 350px;
+        height: 100%;
+        background-color: #fff;
+        border-left: 2px solid #f1f1f1;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        transition: transform 400ms;
+    }
+} */
+
 
 /*================== Header (Home) ============================*/
 
@@ -78,26 +144,6 @@
     #home .buttons-group {
         flex-direction: column;
         gap: 20px;
-    }
-}
-
-/*================== Navbar Section ============================*/
-
-@media screen and (max-width: 1200px) {
-    .nav .menu {
-        --inline-gap: 0px;
-        --block-gap: 15px;
-        transform: translateX(100%);
-        position: absolute;
-        z-index: 999;
-        width: 350px;
-        height: 100%;
-        background-color: #fff;
-        border-left: 2px solid #f1f1f1;
-        right: 0;
-        top: 0;
-        flex-direction: column;
-        transition: transform 400ms;
     }
 }
 
@@ -198,6 +244,7 @@
     footer .container :is(.about, .contact-details) {
         width: calc(calc(100% - var(--gap)) / 2);
         order: 1;
+        
     }
     
     footer .container :is(.subscription) {
